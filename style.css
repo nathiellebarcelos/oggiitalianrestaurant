@@ -1,0 +1,333 @@
+body {
+  margin: 0 0 0 0; /*removes margin and padding*/
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.menu {
+  width: 100%;
+  background-color: #0e0d0d;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.menu ul {
+  list-style: none;
+  margin-left: 70%;
+  margin-top: 2%;
+}
+
+.menu ul li a {
+  float: left;
+  display: inline;
+  text-decoration: none;
+  color: #879ba5;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.menu a:hover {
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  float: left;
+  background-color: #0e0d0d;
+  text-align: left;
+  color: white;
+}
+
+.logo img {
+  height: 5%;
+  width: 100%;
+  padding: 10px 0px 0px 50px;
+}
+
+.footer {
+  float: left;
+  background-color: #0e0d0d;
+  margin-top: 320px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.footer p {
+  float: left;
+  color: #879ba5;
+  top: 0px;
+  padding-left: 20px;
+  background: none;
+  width: 15%;
+  text-align: left;
+}
+
+.logo-footer {
+  margin-left: 10%;
+  height: 20%;
+  width: 20%;
+}
+
+/*--------- Home Page Style -----------------*/
+.content {
+  margin-top: -280px;
+  height: 820px;
+  width: 100%;
+}
+
+#logo-home {
+  float: left;
+  display: none;
+  position: relative;
+  height: 40%;
+  width: 70%;
+  top: 65%;
+  left: 15%;
+}
+
+#img-home {
+  height: 100%;
+  width: 100%;
+}
+
+/*---------- About Page Style -----------------*/
+
+.content-container {
+  position: relative;
+  top: 25%;
+  left: 15%;
+  height: 500px;
+  width: 1080px;
+}
+
+/*Style for container_pic in about.html*/
+.container_pic {
+  float: left;
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+
+.contentAbout {
+  margin-top: 324px;
+  margin-bottom: -848px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.content-container p {
+  color: #fcebf9;
+  font-size: 20px;
+  text-align: justify;
+  padding: 30px 30px 0px 50px;
+  background: none;
+  height: 85%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: #0e0d0d;
+  opacity: 0.97;
+  margin-left: 45%;
+  margin-top: -20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.content-container h2 {
+  color: #fcebf9;
+  width: 50%;
+  margin-left: 45%;
+  padding: 20px 30px 0px 50px;
+  background-color: #0e0d0d;
+  opacity: 0.97;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/*------------ Menu Page Styles -----------------*/
+.intro {
+  background-color: #0e0d0d;
+  height: 788px;
+  width: 100%;
+  margin-bottom: -330px;
+}
+
+.intro img {
+  display: block;
+  text-align: right;
+  height: 100%;
+  width: 72%;
+  margin-left: 28%;
+  margin-top: -200px;
+}
+
+.intro h3,
+p {
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+  margin: 0;
+  color: white;
+  width: 30%;
+  position: relative;
+  top: 400px;
+  left: 40px;
+  background: rgba(135, 155, 165, 0.8);
+  border-radius: 1.5px;
+}
+
+.intro p {
+  text-align: justify;
+  padding: 20px;
+}
+.intro h3 {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide > * {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.slide > .active {
+  position: relative;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1264px) {
+  .menu ul {
+    margin-left: 60%;
+  }
+
+  .content-container {
+    height: 500px;
+    width: 880px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu ul {
+    margin-left: 50%;
+  }
+  .content-container {
+    left: 2%;
+    height: 420px;
+    width: 980px;
+  }
+
+  .content-container p {
+    font-size: 15px;
+    height: 81%;
+    width: 40%;
+  }
+
+  .content-container h2 {
+    width: 40%;
+  }
+
+  .content-container {
+    height: 500px;
+    width: 780px;
+  }
+  .intro h3,
+  p {
+    width: 420px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  .container_pic {
+    display: none;
+  }
+
+  .content-container p {
+    height: 70%;
+    width: 30%;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+  .content-container h2 {
+    width: 30%;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 80px;
+  }
+  .menu ul {
+    margin-left: 30%;
+  }
+
+  .menu ul li a {
+    padding-top: 8px;
+    font-size: 12px;
+  }
+  .logo-footer {
+    display: none;
+  }
+
+  .footer p {
+    font-size: 10px;
+    width: 20%;
+  }
+
+  #logo-home {
+    height: 20%;
+    width: 65%;
+    top: 80%;
+    left: 18%;
+  }
+
+  #img-home {
+    margin-top: 160px;
+  }
+
+  .container_pic {
+    position: relative;
+    left: -10px;
+    width: 0;
+  }
+
+  .content-container {
+    left: 2%;
+    width: 270px;
+  }
+
+  .contentAbout {
+    margin-top: 320px;
+    margin-bottom: -820px;
+    width: 100%;
+    opacity: 0.8;
+    left: 0%;
+  }
+
+  .content-container p {
+    height: 65%;
+    width: 100%;
+    margin-left: 0%;
+    font-size: 12px;
+  }
+
+  .content-container h2 {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .intro h3,
+  p {
+    
+    width: 300px;
+    left: 20px;
+  }
+}

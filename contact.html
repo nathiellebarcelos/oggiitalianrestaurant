@@ -1,0 +1,128 @@
+<!-- Author Henrique Oliveira ID: 20190611 and Nathiélle Nascimento ID: 20187564 -->
+
+<!-- HTML5 doctype -->
+<!DOCTYPE html>
+<!-- Language set to english-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--Head of the page-->
+
+<head>
+  <!-- Character set -->
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <!-- Title of the page -->
+  <title>Oggi - Contact</title>
+  <!-- This is the use of an external Javascript -->
+  <script src="js/script.js"></script>
+  <!-- This is the use of an external CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styleHenrique.css" />
+  <!--<link rel="stylesheet" type="text/css" href="css/styleNathielle.css" />-->
+
+
+</head>
+
+<!-- Body of the page -->
+
+<body>
+
+  <div class="container">
+    <div class="menu">
+      <div class="logo"><a href="index.html" target="_blank"><img src="images/Oggi_logo_menu.png"
+            alt="Oggi Italian Restaurant Logo Menu"></a>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="menu.html">MENU</a>
+        </li>
+        <li>
+          <a href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="content">
+
+      <!--season.jpg was taken from Unsplash (https://unsplash.com/photos/V0xp-dTS3z0)-->
+      <img class="contentBackground" src="./images/season.jpg" alt="Instagram Icon">
+
+      <div class="contactUs">
+        <!-- Form created for Contact us -->
+        <form action="MAILTO:x20190611@student.ncirl.ie" name="contactForm" id="contactForm" method="post"
+          onsubmit='return formValidator()'>
+
+          <!--  Pragraph of the form -->
+          <p>CONTACT US</p>
+
+          <!-- Fieldset for border -->
+          <fieldset>
+
+            <!-- Table inside of form -->
+            <table>
+
+              <tr>
+
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name" size="85" placeholder="NAME"
+                    title="Please enter your name">
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="email">E-mail</label></td>
+                <td><input type="email" name="email" id="email" size="85" placeholder="EXAMPLE@EXAMPLE.COM"
+                    title="Please enter your e-mail">
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" name="phone" id="phone" size="85" placeholder="PHONE NUMBER"
+                    title="Please enter your phone">
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="message">Message</label></td>
+                <td><textarea name="message" id="message" rows="6" cols="73" placeholder="INSERT YOUR MESSAGE"
+                    title="Please enter your message"></textarea>
+                </td>
+              </tr>
+
+            </table>
+
+            <input type="submit" id="submit" value="SUBMIT">
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>CONTACT<br><br>
+        E-mail: oggi@hotmail.com<br>
+        Phone: + 353 87 654 7894
+      </p>
+      <p>OPENING TIMES<br><br>
+        Monday to Friday - 5pm to 11pm<br>
+        Saturday and Sunday - 1pm to 11pm
+      </p>
+      <p>ADDRESS<br><br>
+        54, Howth Road<br>
+        Dublin 05, Ireland
+      </p>
+      <img class="logo-footer" src="images/Oggi_logo_menu.png" alt="Oggi Italian Restaurant Logo Footer">
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+body {
+  margin: 0 0 0 0; /*removes margin and padding*/
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.menu {
+  width: 100%;
+  background-color: #0e0d0d;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.menu ul {
+  list-style: none;
+  margin-left: 70%;
+  margin-top: 2%;
+}
+
+.menu ul li a {
+  float: left;
+  display: inline;
+  text-decoration: none;
+  color: #879ba5;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.menu a:hover {
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  float: left;
+  background-color: #0e0d0d;
+  text-align: left;
+  color: white;
+}
+
+.logo img {
+  height: 5%;
+  width: 100%;
+  padding: 10px 0px 0px 50px;
+}
+
+.footer {
+  float: left;
+  background-color: #0e0d0d;
+  margin-top: 324px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.footer p {
+  float: left;
+  color: #879ba5;
+  top: 0px;
+  padding-left: 20px;
+  background: none;
+  width: 15%;
+  text-align: left;
+}
+
+.logo-footer {
+  margin-left: 10%;
+  height: 20%;
+  width: 20%;
+}
+
+/*------------Contact Page--------------------*/
+
+.content {
+  margin-top: -245px;
+  height: 800px;
+  width: 100%;
+  margin-top: 79px;
+  margin-bottom: -325px;
+}
+
+.contactUs input,
+textarea {
+  margin-left: 20px;
+}
+
+/*Style for error validation*/
+form .error {
+  color: #a16102;
+  font-size: 15px;
+}
+
+/*Style for contactUs*/
+.contactUs {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  color: white;
+  font-size: 17px;
+  background-color: #879ba5;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  opacity: 0.9;
+}
+
+/*Style for contactUs paragraph*/
+.contactUs p {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/*Style for submit button*/
+.contactUs input#submit {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #0e0d0d;
+  border: none;
+  cursor: pointer;
+  margin-left: 630px;
+  margin-top: 10px;
+}
+
+/*Style for contentBackground*/
+.contentBackground {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/*-------------------Reposive Design-------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1264px) {
+  .menu ul {
+    margin-left: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu ul {
+    margin-left: 50%;
+  }
+
+  .footer {
+    width: 105%;
+  }
+
+  .contentBackground {
+    width: 105%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 70px;
+    left: 5px;
+  }
+  .menu ul {
+    margin-left: 30%;
+  }
+
+  .menu ul li a {
+    padding-top: 8px;
+    font-size: 12px;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .footer p {
+    font-size: 10px;
+    width: 25%;
+  }
+  .footer {
+    width: 105%;
+  }
+
+  .contentBackground {
+    margin-top: -40px;
+    height: 105%;
+    width: 105%;
+  }
+
+  .contactUs input,
+  textarea {
+    width: 200px;
+  }
+
+  .contactUs label {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+
+  .contactUs input#submit {
+    margin-left: 70px;
+  }
+}
